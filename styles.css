@@ -1,0 +1,25 @@
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.selection-box {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 5em;
+}
+
+label {
+  padding-bottom: 3pt
+}
+
+select {
+  margin-bottom: 3pt;
+}
+
+button {
+  margin-top: 5pt;
+}

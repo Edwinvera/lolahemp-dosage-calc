@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dosage</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Dosage Calculator</title>
 </head>
+
 <body>
-  
-  <script href="app.js"></script>
+  <div class="selection-box">
+    <h3>Dosage Recommendation</h3>
+    <label for="select-weight">Select Weight</label>
+    <select name="weight" id="select-weight">
+      <option></option>
+      <option>1-5lbs</option>
+      <option>6-10lbs</option>
+      <option>11-25lbs</option>
+      <option>26-50lbs</option>
+      <option>51-75lbs</option>
+      <option>76-100lbs</option>
+      <option>100lbs+</option>
+    </select>
+    <label for="select-product">Select Oil or Chews</label>
+    <select name="product" id="select-product">
+      <option></option>
+      <option>Oil</option>
+      <option>Chews</option>
+    </select>
+    <button>Calculate</button>
+  </div>
+
+<script href="app.js"></script>
 </body>
 </html>
