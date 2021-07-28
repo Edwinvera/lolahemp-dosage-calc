@@ -15,8 +15,8 @@ const petSize = {
     },
     chews: {
       chew3mg: {
-        startingDose: "Starting Dosage: 1/2 chew (once daily)",
-        maxDose: "Max Dosage: 1 chew (twice daily)"
+        startingDose: "1/2 chew (once daily)",
+        maxDose: "1 chew (twice daily)"
       },
       chew6mg: {
         startingDose: "Not Recommended",
@@ -164,7 +164,7 @@ const petSize = {
   }
 }
 
-console.log(petSize.xxSmall)
+console.log(petSize.xxSmall.chews.chew3mg.startingDose)
 
 // let petWeight;
 // let product;
