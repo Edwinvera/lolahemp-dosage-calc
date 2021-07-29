@@ -169,8 +169,10 @@ const button = document.getElementById("btn")
 const selectWeight = document.getElementById("select-weight")
 const selectProduct = document.getElementById("select-product")
 
-const valueWeight = selectWeight.options[selectWeight.selectedIndex].value
-
 button.addEventListener('click', function () {
+  const valueWeight = selectWeight.options[selectWeight.selectedIndex].value
+  const valueProduct = selectProduct.options[selectProduct.selectedIndex].value
+  
   console.log(valueWeight)
+  console.log(valueProduct)
 })
