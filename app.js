@@ -3,10 +3,10 @@ const dosageArr = [
   {
     weight: "1-5",
     oil: {
-      regularStarting: "1 drop (twice daily)",
-      regularMax: "3 drops (twice daily)",
-      extraStarting: "Not Recommended",
-      extraMax: "Not Recommended"
+      regularStarting: "Regular Strength Starting dose: 1 Drop (twice daily)",
+      regularMax: "Regular Strength Max Dose: 3 Drops (twice daily)",
+      extraStarting: "Extra strength starting dose: Not Recommended",
+      extraMax: "Extra strength max dose: Not Recommended"
     },
     chews: {
       chew3mgStarting: "1/2 chew (once daily)",
@@ -280,11 +280,12 @@ button.addEventListener('click', function () {
   const valueWeight = selectWeight.options[selectWeight.selectedIndex].value
   const valueProduct = selectProduct.options[selectProduct.selectedIndex].value
 
-  for (let i = 0; i < dosageArr.length; i++) {
-
-    // if (dosageArr[i] === valueProduct) {
-    //   console.log(dosageArr[i])
-    // }
-    console.log(dosageArr[i])
-  }
+  dosageArr.forEach(item => {
+    if (valueWeight === item.weight) {
+      console.log(item[valueProduct].regularStarting)
+      console.log(item[valueProduct].regularMax)
+      console.log(item[valueProduct].extraStarting)
+      console.log(item[valueProduct].extraMax)
+    }
+  })
 })
