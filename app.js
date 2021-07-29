@@ -1,6 +1,6 @@
 //javascript
 
-const petSize = {
+const dosage = {
   xxSmall: {
     weight: "1-5lbs",
     oil: {
@@ -164,8 +164,13 @@ const petSize = {
   }
 }
 
-console.log(petSize.xxSmall.chews.chew3mg.startingDose)
+const button = document.getElementById("btn")
 
-// let petWeight;
-// let product;
-// let result;
+const selectWeight = document.getElementById("select-weight")
+const selectProduct = document.getElementById("select-product")
+
+const valueWeight = selectWeight.options[selectWeight.selectedIndex].value
+
+button.addEventListener('click', function () {
+  console.log(valueWeight)
+})

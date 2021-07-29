@@ -18,6 +18,7 @@ label {
 
 select {
   margin-bottom: 3pt;
+  padding: 5px;
 }
 
 button {

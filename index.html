@@ -13,24 +13,26 @@
     <h3>Dosage Recommendation</h3>
     <label for="select-weight">Select Weight</label>
     <select name="weight" id="select-weight">
-      <option></option>
-      <option>1-5lbs</option>
-      <option>6-10lbs</option>
-      <option>11-25lbs</option>
-      <option>26-50lbs</option>
-      <option>51-75lbs</option>
-      <option>76-100lbs</option>
-      <option>100lbs+</option>
+      <optgroup label="Select Weight">
+        <option value="1-5">1-5lbs</option>
+        <option value="6-10">6-10lbs</option>
+        <option value="11-25">11-25lbs</option>
+        <option value="26-50">26-50lbs</option>
+        <option value="51-75">51-75lbs</option>
+        <option value="51-75">76-100lbs</option>
+        <option value="100">100lbs+</option>
+      </optgroup>
     </select>
     <label for="select-product">Select Oil or Chews</label>
     <select name="product" id="select-product">
-      <option></option>
-      <option>Oil</option>
-      <option>Chews</option>
+      <optgroup label="Select Product">
+        <option value="oil">Oil</option>
+        <option value="chews">Chews</option>
+      </optgroup>
     </select>
-    <button>Calculate</button>
+    <button id="btn">Calculate</button>
   </div>
 
-<script href="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
