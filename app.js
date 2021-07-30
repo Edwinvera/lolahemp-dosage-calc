@@ -1,4 +1,3 @@
-//javascript
 const dosageArr = [
   {
     weight: "1-5",
