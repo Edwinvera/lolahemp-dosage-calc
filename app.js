@@ -1,3 +1,4 @@
+//Dosage Recommendation List
 const dosageArr = [
   {
     weight: "1-5",
@@ -134,25 +135,30 @@ const dosageArr = [
   }
 ]
 
-// console.log(dosageArr)
-
 const button = document.getElementById("btn")
-
 const selectWeight = document.getElementById("select-weight")
 const selectProduct = document.getElementById("select-product")
 
+//lightbox
+const lightbox = document.getElementById("lightbox")
+
+//Dosage Calculator
 button.addEventListener('click', function () {
   const valueWeight = selectWeight.options[selectWeight.selectedIndex].value
   const valueProduct = selectProduct.options[selectProduct.selectedIndex].value
+  lightbox.classList.add("active")
 
   dosageArr.forEach(item => {
     if (valueWeight === item.weight) {
+      lightbox.innerHTML+= `<p style= "text-align: center; font-size: 25px">"Lolahemp recommends: ${item[valueProduct].starting} and/or ${item[valueProduct].max}<p>`
+
       console.log(item[valueProduct].starting)
       console.log(item[valueProduct].max)
     }
   })
 })
 
-const lightbox = document.createElement('div')
-lightbox.id = "lightbox"
-document.body.appendChild(lightbox)
+lightbox.addEventListener('click', event => {
+  if (event.target !== e.currentTarget)
+    return lightbox.classList.remove('active')
+})

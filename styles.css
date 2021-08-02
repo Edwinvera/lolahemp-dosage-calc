@@ -35,5 +35,15 @@ button {
   display: none;
 }
 
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+#lightbox div {
+  max-width: 90%;
+  max-height: 80%;
+  background-color: black;
+  border: 2px solid white;
+}
